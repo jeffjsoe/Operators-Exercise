@@ -8,17 +8,17 @@
             //If we declare a variable we can use it for whatever purpose we want later in the code, so we dont have to constantly write 17 or 4. Instead we can assign a value and declare it earlier in the code. 
             var a = 17;
             var b = 4;
-
-            var sum = a += b;
+            //- If you do var a=a+=b, then it will do 17+4 and store a as 21 and sum as 21. Then it will store a and use it for the rest of the program
+            var sum = a + b;
             Console.WriteLine(sum);
 
-            var diff=a-=b;
-            Console.WriteLine(diff);
+            var diff = a - b;
+            Console.WriteLine($"the difference is {diff}");
             //--a=a*b
-            var product = a *= b;
+            var product=17*4;
             Console.WriteLine(product);
             //--a=a/b
-            var quotient = a /= b;
+            var quotient = a/b;
 
             var remainder=a % b;
             //Here we plug in the declartion of the variables a and b and insert into a string
@@ -34,7 +34,7 @@
 
             Console.WriteLine($"The area of a circle with a radius of {radius} is {answer}");
             //-------------------Exercise 2----------------
-
+           
         }
     }
 }
